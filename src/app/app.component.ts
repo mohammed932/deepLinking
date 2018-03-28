@@ -72,7 +72,7 @@ export class MyApp {
   }
 
   test(itemId){
-    console.log("kos");
+    console.log("heelo mmmohaameeddd");
     console.log("push data  :",itemId);
     this.nav.push('DetailsPage',{itemId : itemId})
     
