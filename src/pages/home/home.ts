@@ -1,14 +1,19 @@
+import { ITEMS } from './../../Models/items';
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
-
+import { IonicPage, NavController, NavParams } from 'ionic-angular';
+@IonicPage()
 @Component({
   selector: 'page-home',
-  templateUrl: 'home.html'
+  templateUrl: 'home.html',
 })
 export class HomePage {
+  Items : any [] = ITEMS
+  constructor(public navCtrl: NavController, public navParams: NavParams) {
+ 
+  }
 
-  constructor(public navCtrl: NavController) {
-
+  details(item){
+    this.navCtrl.push('DetailsPage',{itemId : item.id})
   }
 
 }

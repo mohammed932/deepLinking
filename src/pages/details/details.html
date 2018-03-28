@@ -1,0 +1,23 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>details</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-card>
+    <ion-card-header>
+      {{Item[0].name}}
+    </ion-card-header>
+    <ion-card-content>
+      {{Item[0].details}}
+      <button ion-button icon-right clear small (click)="share()">
+        <ion-icon name="text"></ion-icon>
+        <div>Share</div>
+      </button>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
